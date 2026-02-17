@@ -5,8 +5,6 @@ function getCurrentURL() {
 function validateURL() {
     try {
         const url = new URL(getCurrentURL());
-        console.log("🚀 ~ validateURL ~ url:", url)
-        console.log(url.protocol);
         return url.protocol === "http:" || url.protocol === "https:";
     }
     catch(error) {
