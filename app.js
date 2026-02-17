@@ -8,7 +8,6 @@ function validateURL() {
         return url.protocol === "http:" || url.protocol === "https:";
     }
     catch(error) {
-        console.log("🚀 ~ validateURL ~ error:", error)
         const errorMessage = document.querySelector("#error-message");
         errorMessage.textContent = error.message;
         errorMessage.style.display = 'block';
@@ -19,10 +18,8 @@ function validateURL() {
         errorMessage.style.margin = '300px auto';   
         errorMessage.style.width = '40%';
         errorMessage.style.color = 'red';
-        document.querySelector("#error-message").textContent = error.message;
-        document.querySelector("#error-message").style.display = 'block';
         return false;
     }
 }
 
-console.log(validateURL());
+validateURL();
