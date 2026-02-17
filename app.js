@@ -9,7 +9,6 @@ function validateURL() {
     }
     catch(error) {
         const errorMessage = document.querySelector("#error-message");
-        console.log("🚀 ~ validateURL ~ errorMessage:", errorMessage)
         errorMessage.textContent = error?.message || 'Invalid URL';
         errorMessage.style.display = 'block';
         errorMessage.style.border= '1px solid red';
