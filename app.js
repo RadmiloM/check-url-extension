@@ -1,9 +1,5 @@
-console.log("APP JS WORks");
-// Steps to solve this problem
-// 1. get the current URL
-
 function getCurrentURL() {
-    return 'ss';
+    return window.location.href;
 }
 
 function validateURL() {
