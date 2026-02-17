@@ -24,6 +24,7 @@ function validateURL() {
         errorMessage.style.textAlign = 'center';
         errorMessage.style.margin = '300px auto';   
         errorMessage.style.width = '40%';
+        errorMessage.style.color = 'red';
         document.querySelector("#error-message").textContent = error.message;
         document.querySelector("#error-message").style.display = 'block';
         return false;

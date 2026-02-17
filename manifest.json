@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Validate URL",
+    "version": "1.0.0",
+    "description": "Basic extension that validates url",
+    "icons": {
+        "128": "images/remotar-jobs-s5kTY-Ve1c0-unsplash.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "app.js"
+            ],
+            "css": [
+                "css/style.css"
+            ]
+        }
+    ]
+}
