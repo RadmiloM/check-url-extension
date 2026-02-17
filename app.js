@@ -5,7 +5,7 @@ function getCurrentURL() {
 function validateURL() {
     try {
         const url = new URL(getCurrentURL());
-        return url.protocol === "http:" || url.protocol === "https:";
+        return url.protocol === "http:" || url.protocol === "https:" || !url;
     }
     catch(error) {
         const errorMessage = document.querySelector("#error-message");
